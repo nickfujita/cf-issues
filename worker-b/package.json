@@ -1,0 +1,22 @@
+{
+	"name": "worker-b",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "npm run build && vite preview",
+		"deploy": "npm run build && wrangler deploy",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@cloudflare/vite-plugin": "^1.1.1",
+		"@cloudflare/vitest-pool-workers": "^0.8.19",
+		"@cloudflare/workers-types": "^4.20250508.0",
+		"typescript": "^5.5.2",
+		"vite": "^6.3.5",
+		"vitest": "~3.0.7",
+		"wrangler": "^4.14.3"
+	}
+}
