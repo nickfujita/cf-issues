@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      durable-utils:
+        specifier: ^0.3.5
+        version: 0.3.5
     devDependencies:
       typescript:
         specifier: ^5.5.2
@@ -379,6 +383,9 @@ packages:
     resolution: {integrity: sha512-3UDv+G9CsCKO1WKMGw9fwq/SWJYbI0c5Y7LU1AXYoDdbhE2AHQ6N6Nb34sG8Fj7T5APy8qXDCKuuIHd1BR0tVA==}
     engines: {node: '>=8'}
 
+  durable-utils@0.3.5:
+    resolution: {integrity: sha512-R0XI76HP0KJh3xQ0ZkeWq1MsuQnd30t/CKhUm2aab2KBOhiCZrFYuc+FIg46UqXimDr3rRdt1Zd6Z1uiAyAIFQ==}
+
   esbuild@0.25.4:
     resolution: {integrity: sha512-8pgjLUcUjcgDg+2Q4NYXnPbo/vncAY4UmyaCm0jZevERqCHZIaWwdJHkf8XQtu4AxSKCdvrUbT0XUr1IdZzI8Q==}
     engines: {node: '>=18'}
@@ -740,6 +747,8 @@ snapshots:
 
   detect-libc@2.0.4:
     optional: true
+
+  durable-utils@0.3.5: {}
 
   esbuild@0.25.4:
     optionalDependencies:
